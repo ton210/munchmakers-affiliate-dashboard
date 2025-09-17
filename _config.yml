@@ -1,0 +1,17 @@
+# GitHub Pages Configuration
+# Force HTTPS for all connections
+enforce_ssl: true
+
+# Site settings
+title: "MunchMakers Affiliate Dashboard"
+description: "Professional affiliate dashboard for MunchMakers cannabis accessories"
+url: "https://ton210.github.io"
+baseurl: "/munchmakers-affiliate-dashboard"
+
+# Security headers
+plugins:
+  - jekyll-redirect-from
+
+# Force HTTPS redirects
+gems:
+  - jekyll-redirect-from
