@@ -65,9 +65,40 @@
             border-bottom: 1px solid var(--border-light);
         }
 
+        .header-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
         .logo {
             height: 40px;
             width: auto;
+        }
+
+        .flexoffers-logo {
+            height: 32px;
+            width: auto;
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        .flexoffers-logo:hover {
+            opacity: 1;
+        }
+
+        .partnership-badge {
+            background: linear-gradient(135deg, var(--primary-blue), #1e40af);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 4px;
+            text-align: center;
         }
 
         .affiliate-info {
@@ -857,7 +888,13 @@
         <!-- Sidebar -->
         <div class="sidebar" id="sidebar">
             <div class="sidebar-header">
-                <img src="assets/images/munchmakers-logo-original.png" alt="MunchMakers" class="logo">
+                <div class="header-logos">
+                    <img src="assets/images/munchmakers-logo-original.png" alt="MunchMakers" class="logo">
+                    <img src="assets/images/flexoffers-logo.svg" alt="FlexOffers" class="flexoffers-logo">
+                </div>
+                <div class="partnership-badge">
+                    Exclusive FlexOffers Partnership
+                </div>
                 <div class="affiliate-info">
                     <div class="affiliate-name">John Nardo</div>
                     <div class="affiliate-id">john@flexoffers.com</div>
